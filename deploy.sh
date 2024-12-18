@@ -110,5 +110,12 @@ fi
 
 git branch -D firebase-deploy
 
+# Deploy the site to Firebase
+echo "Building and deploying the site to Firebase..."
+if ! (firebase deploy); then
+    echo "Firebase deployment failed."
+    exit 1
+fi
+
 echo "All done! Site synced, processed, committed, built, and deployed."
 
