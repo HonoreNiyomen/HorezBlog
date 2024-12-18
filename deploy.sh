@@ -93,18 +93,18 @@ fi
 
 # Step 8: Push the public folder to the Firebase branch using subtree split and force push
 echo "Deploying to GitHub Firebase..."
-if git branch --list | grep -q 'main'; then
-    git branch -D firebase deploy
+if git branch --list | grep -q 'firebase-deploy'; then
+    git branch -D firebase-deploy
 fi
 
-if ! git subtree split --prefix public -b firebase deploy; then
+if ! git subtree split --prefix public -b firebase-deploy; then
     echo "Subtree split failed."
     exit 1
 fi
 
 if ! git push origin firebase deploy:firebase --force; then
     echo "Failed to push to firebase branch."
-    git branch -D firebase deploy
+    git branch -D firebase-deploy
     exit 1
 fi
 
