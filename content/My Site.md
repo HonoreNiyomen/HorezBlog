@@ -19,5 +19,3 @@ and another
 ![[screenshot_2024-11-25-172546.png]]
 and another
 ![[Screenshot_2024-11-06_21-12-01.png]]
-just one more
-![[Screenshot_2024-11-06_21-10-42.png]]
