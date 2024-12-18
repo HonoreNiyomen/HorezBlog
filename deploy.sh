@@ -10,7 +10,7 @@ sourcePath="/home/horez/HorezBlog/posts"
 destinationPath="/home/horez/honoreblog/content/posts"
 
 # Set GitHub Repo
-myrepo="https://github.com/honoreniyomen/horezblog.git"
+myrepo="horezblog"
 
 # Check for required commands
 for cmd in git rsync python3 hugo; do
