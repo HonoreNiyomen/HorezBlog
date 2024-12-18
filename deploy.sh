@@ -102,13 +102,13 @@ if ! git subtree split --prefix public -b firebase-deploy; then
     exit 1
 fi
 
-if ! git push origin firebase deploy:firebase --force; then
+if ! git push origin firebase-deploy:firebase --force; then
     echo "Failed to push to firebase branch."
     git branch -D firebase-deploy
     exit 1
 fi
 
-git branch -D firebase deploy
+git branch -D firebase-deploy
 
 echo "All done! Site synced, processed, committed, built, and deployed."
 
