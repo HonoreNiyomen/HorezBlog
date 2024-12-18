@@ -3,34 +3,46 @@ import re
 import shutil
 
 # Paths
-posts_dir = "/home/horez/honoreblog/content/posts"
-attachments_dir = "/home/horez/HorezBlog"
-static_images_dir = "/home/horez/honoreblog/static/images"
+obsidian_vault_path = "/home/horez/HorezBlog"  # Replace with your Obsidian vault path
+hugo_posts_path = "/home/horez/honoreblog/content/"  # Replace with your Hugo posts path
+hugo_static_images_path = "/home/horez/honoreblog/static/images"  # Replace with your Hugo static images path
 
-# Step 1: Process each markdown file in the posts directory
-for filename in os.listdir(posts_dir):
-    if filename.endswith(".md"):
-        filepath = os.path.join(posts_dir, filename)
-        
-        with open(filepath, "r") as file:
-            content = file.read()
-        
-        # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
-        images = re.findall(r'\[\[([^]]*\.png)\]\]', content)
-        
-        # Step 3: Replace image links and ensure URLs are correctly formatted
-        for image in images:
-            # Prepare the Markdown-compatible link with %20 replacing spaces
-            markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
-            content = content.replace(f"[[{image}]]", markdown_image)
-            
-            # Step 4: Copy the image to the Hugo static/images directory if it exists
-            image_source = os.path.join(attachments_dir, image)
-            if os.path.exists(image_source):
-                shutil.copy(image_source, static_images_dir)
+# Ensure Hugo images directory exists
+os.makedirs(hugo_static_images_path, exist_ok=True)
 
-        # Step 5: Write the updated content back to the markdown file
-        with open(filepath, "w") as file:
-            file.write(content)
+def process_markdown_files():
+    for root, _, files in os.walk(obsidian_vault_path):
+        for file in files:
+            if file.endswith(".md"):
+                filepath = os.path.join(root, file)
+                with open(filepath, "r") as f:
+                    content = f.read()
 
-print("Markdown files processed and images copied successfully.")
+                # Find Obsidian-style image links: ![[image.png]]
+                image_links = re.findall(r'!\[\[([^]]+)\]\]', content)
+
+                for image in image_links:
+                    image_source_path = os.path.join(obsidian_vault_path, image)
+                    image_name = os.path.basename(image_source_path)
+
+                    # Copy image to Hugo's static/images directory
+                    if os.path.exists(image_source_path):
+                        shutil.copy(image_source_path, hugo_static_images_path)
+                        print(f"Copied: {image_name} to {hugo_static_images_path}")
+
+                        # Update Obsidian link to Hugo-compatible link
+                        new_image_path = f"/images/{image_name}"
+                        content = content.replace(f"[[{image}]]", f"![Description]({new_image_path})")
+                    else:
+                        print(f"Image not found: {image_source_path}")
+
+                # Save the updated markdown file to Hugo posts directory
+                hugo_markdown_path = os.path.join(hugo_posts_path, os.path.relpath(filepath, obsidian_vault_path))
+                os.makedirs(os.path.dirname(hugo_markdown_path), exist_ok=True)
+                with open(hugo_markdown_path, "w") as f:
+                    f.write(content)
+                print(f"Processed: {file}")
+
+# Run the script
+process_markdown_files()
+print("Markdown files processed and images transferred successfully.")

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>HoresiusmSway on Terminal</title>
+    <title>HoresiusmSway on Honore Niyomukiza LOB</title>
     <link>/tags/horesiusmsway/</link>
-    <description>Recent content in HoresiusmSway on Terminal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in HoresiusmSway on Honore Niyomukiza LOB</description>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/horesiusmsway/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/horesiusmsway/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Horez&#39;s First Blog Note</title>
-      <link>/posts/posts/horezs-first-blog-note/</link>
-      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/horezs-first-blog-note/</guid>
+      <link>/posts/my-site/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/my-site/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve had this idea of having my own website to document all i do for quite some time now, and this will mark the first step toward that journey. From here on all my significant steps in my it life will all be marked here with as much efficiency and detail as i can.&lt;/p&gt;
 &lt;p&gt;Thank you for starting this journey with me.&lt;/p&gt;
 &lt;p&gt;I am currently using an Acer 2020 Chromebook which i Unlocked the boot-loader. I currently have running Arch on it with sway as the Tiling Window Manager.&lt;/p&gt;</description>
-      <content>&lt;p&gt;I&amp;rsquo;ve had this idea of having my own website to document all i do for quite some time now, and this will mark the first step toward that journey. From here on all my significant steps in my it life will all be marked here with as much efficiency and detail as i can.&lt;/p&gt;
-&lt;p&gt;Thank you for starting this journey with me.&lt;/p&gt;
-&lt;p&gt;I am currently using an Acer 2020 Chromebook which i Unlocked the boot-loader. I currently have running Arch on it with sway as the Tiling Window Manager.&lt;/p&gt;
-&lt;p&gt;And this is my first Image on my website.
-![[20241209_15h47m38s_grim.png]]
-and another
-![[screenshot_2024-12-14-114540.png]]&lt;/p&gt;
-</content>
     </item>
-    
+    <item>
+      <title>Horez&#39;s First Blog Note</title>
+      <link>/posts/posts/my-site/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/posts/my-site/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had this idea of having my own website to document all i do for quite some time now, and this will mark the first step toward that journey. From here on all my significant steps in my it life will all be marked here with as much efficiency and detail as i can.&lt;/p&gt;
+&lt;p&gt;Thank you for starting this journey with me.&lt;/p&gt;
+&lt;p&gt;I am currently using an Acer 2020 Chromebook which i Unlocked the boot-loader. I currently have running Arch on it with sway as the Tiling Window Manager.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
