@@ -10,7 +10,7 @@ sourcePath="/home/horez/HorezBlog/posts/"
 destinationPath="/home/horez/honoreblog/content/"
 
 # Set GitHub Repo
-myrepo="https://github.com/honoreniyomen/horezblog.git"
+myrepo="git@github.com/honoreniyomen/horezblog.git"
 
 # Check for required commands
 for cmd in git rsync python3 hugo; do
@@ -93,7 +93,7 @@ fi
 
 # Step 8: Push the public folder to the Firebase branch using subtree split and force push
 echo "Deploying to GitHub Firebase..."
-if git branch --list | grep -q 'firebase deploy'; then
+if git branch --list | grep -q 'main'; then
     git branch -D firebase deploy
 fi
 
