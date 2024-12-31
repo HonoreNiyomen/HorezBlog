@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HoresiusmSway on Honore Niyomukiza LOB</title>
     <link>/tags/horesiusmsway/</link>
     <description>Recent content in HoresiusmSway on Honore Niyomukiza LOB</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/horesiusmsway/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,18 @@
       <link>/18-dec-2024/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
       <guid>/18-dec-2024/</guid>
-      <description>&lt;p&gt;First task of the day completed. I just finished customizing a mega script that with me making my site deployment automated even more, now all i have to do is write a note and the topic i want to cover on that day and the run this mega script.&#xA;Everything from syncing my update, images and my github repo with my site when be updated.&#xA;This is the MEGA script, with all my customization&lt;/p&gt;</description>
+      <description>&lt;p&gt;First task of the day completed. I just finished customizing a mega script that with me making my site deployment automated even more, now all i have to do is write a note and the topic i want to cover on that day and the run this mega script.
+Everything from syncing my update, images and my github repo with my site when be updated.
+This is the MEGA script, with all my customization&lt;/p&gt;</description>
     </item>
     <item>
       <title>Morning Thoughts</title>
       <link>/posts/18-dec-2024/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
       <guid>/posts/18-dec-2024/</guid>
-      <description>&lt;p&gt;First task of the day completed. I just finished customizing a mega script that with me making my site deployment automated even more, now all i have to do is write a note and the topic i want to cover on that day and the run this mega script.&#xA;Everything from syncing my update, images and my github repo with my site when be updated.&#xA;This is the MEGA script, with all my customization&lt;/p&gt;</description>
+      <description>&lt;p&gt;First task of the day completed. I just finished customizing a mega script that with me making my site deployment automated even more, now all i have to do is write a note and the topic i want to cover on that day and the run this mega script.
+Everything from syncing my update, images and my github repo with my site when be updated.
+This is the MEGA script, with all my customization&lt;/p&gt;</description>
     </item>
     <item>
       <title>Horez&#39;s First Blog Note</title>
