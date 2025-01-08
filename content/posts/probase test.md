@@ -1,6 +1,6 @@
 ---
-title: Morning Thoughts
-date: 2024-12-18
+title: probase test
+date: 2024-01-08
 time: 10:01
 tags:
   - blog
