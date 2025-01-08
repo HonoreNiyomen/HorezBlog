@@ -130,5 +130,19 @@ This is the MEGA script, with all my customization&lt;/p&gt;</description>
       <guid>/posts/my-site/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve had this idea of having my own website to document all i do for quite some time now, and this will mark the first step toward that journey. From here on all my significant steps in my it life will all be marked here with as much efficiency and detail as i can. And bit inspiration from NetworkChuck, wouldn&amp;rsquo;t have started this journey now if it wasn&amp;rsquo;t for him starting his.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title></title>
+      <link>/posts/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/untitled/</guid>
+      <description>&lt;p&gt;new&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/untitled/</guid>
+      <description>&lt;p&gt;new&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
