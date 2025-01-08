@@ -65,12 +65,6 @@
     <loc>/posts/18-dec-2024/</loc>
     <lastmod>2024-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/probase-test/</loc>
-    <lastmod>2024-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/probase-test/</loc>
-    <lastmod>2024-12-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/my-site/</loc>
     <lastmod>2024-12-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -79,6 +73,12 @@
   </url><url>
     <loc>/tags/networkchuck/</loc>
     <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/probase-test/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/probase-test/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
   </url>
